@@ -16,3 +16,7 @@ def ordinal_suffix(value):
         return 'nd'
     elif s.endswith('3'):
         return 'th'
+    
+
+def ordinal(value):
+    return str(value) + ordinal_suffix(value)
