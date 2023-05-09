@@ -1,4 +1,3 @@
-
 def nth_root(radicand, n):
     return radicand ** (1/n)
 
@@ -27,3 +26,13 @@ def display_nth_root(radicand, n):
     message = "The" + ordinal(n) + "root of " + str(radicand) + "is" + str(root)
 
     print(message)
+
+
+"""
+def main():
+    radicand = int(input("Type the radicand: "))
+    n = int(input("Type the value of n: "))
+    display_nth_root(radicand, n)
+
+main()    
+"""
