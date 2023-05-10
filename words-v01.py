@@ -10,29 +10,15 @@ def fetch_words():
         for word in line_words:
             story_words.append(word)
     story.close()
-    return story_words
 
-
-def print_words(story_words):
     for word in story_words:
         print(word)
-
-
-def main():
-    words = fetch_words()
-    print_words(words)
-
-if __name__ == '__main__':
-    main()
-
-
-
 
 # Python sets the value of dunder name differently, depeding on how our module is being used.
 # The key idea we're introducing here is that our module can use this behavior to decide how it should behavior:
 
-#if __name__ == '__main__':  # id dunder name is equal to the string dunder main
-#    fetch_words()           # we execute the function fetch_words()
+if __name__ == '__main__':  # id dunder name is equal to the string dunder main
+    fetch_words()           # we execute the function fetch_words()
 
 # On the other hand, if dunder name is not equal to dunder main, the module knows it's being imported into another module,
 # no executed, and so only defines the fetch_words function without executing it
