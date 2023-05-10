@@ -18,18 +18,22 @@ def print_items(items):
         print(item)
 
 
-def main():
-    url = sys.argv[1]
+def main(url):
     words = fetch_words(url)
     print_items(words)
 
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1])
 
 
 """
 Run it from the REPL:
-$ python words.py http://sixty-north.com/c/t.txt
+
+PS D:\2\github\core-python> python
+Python 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from words import *
+>>> main("http://sixty-north.com/c/t.txt")
 
 """
