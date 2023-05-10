@@ -2,7 +2,11 @@
 
 Usage:
     python3 words.py <URL>
+
 """
+
+#!/usr/bin/env python3
+
 import sys
 from urllib.request import urlopen
 
@@ -48,7 +52,7 @@ def main(url):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1])       # The 0th arg is the module filename
 
 
 """
@@ -66,4 +70,12 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from words import *
 >>> help(fetch_words)
 
+"""
+
+
+
+# > comments - Use it to explain the code itself
+
+"""
+Docstrings - Used to explain how to consume the facilities your module provides rather than how it works
 """
